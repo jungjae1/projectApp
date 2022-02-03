@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content=""/>
+    <meta name="keywords" content="" />
+    <meta name="author" content=""/>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <link href="./pt.css" rel="stylesheet" type="text/css" />
+    <link href="css/vg.css" rel="stylesheet"/>
+	<link href="css/vegas.min.css" rel="stylesheet"/>
+	<link href="css/animate.css" rel="stylesheet"/>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js'></script>
+    <style>
+		.scrollPosition{
+			width:100%; 
+			height:5px;
+			position:fixed;
+			bottom:0;
+			left:0;
+		}
+		#scrBar{width:0px; height:5px; background:red; transition:all .4s;}
+	</style>
+    <script type="text/javascript">
+
+        window.onload = function () {
+
+            var elm = ".page";
+
+            $(elm).each(function (index) {
+
+                // 개별적으로 Wheel 이벤트 적용
+
+                $(this).on("mousewheel DOMMouseScroll", function (e) {
+
+                    e.preventDefault();
+
+                    var delta = 0;
+
+                    if (!event) event = window.event;
+
+                    if (event.wheelDelta) {
+
+                        delta = event.wheelDelta / 120;
+
+                        if (window.opera) delta = -delta;
+
+                    } 
+
+                    else if (event.detail)
+
+                        delta = -event.detail / 3;
+
+                    var moveTop = $(window).scrollLeft();
+
+                    var elmSelecter = $(elm).eq(index);
+
+                    // 마우스휠을 위에서 아래로
+
+                    if (delta < 0) {
+
+                        if ($(elmSelecter).next() != undefined) {
+
+                            try{
+
+                                moveTop = $(elmSelecter).next().offset().left;
+
+                            }catch(e){}
+
+                        }
+
+                    // 마우스휠을 아래에서 위로
+
+                    } else {
+
+                        if ($(elmSelecter).prev() != undefined) {
+
+                            try{
+
+                                moveTop = $(elmSelecter).prev().offset().left;
+
+                            }catch(e){}
+
+                        }
+
+                    }
+
+                     
+
+                    // 화면 이동 0.8초(800)
+
+                    $("html,body").stop().animate({
+
+                        scrollLeft: moveTop + 'px'
+
+                    }, {
+
+                        duration: 800, complete: function () {
+
+                        }
+
+                    });
+
+                });
+
+            });
+
+        }
+
+    </script>
+    <style>
+        ::-webkit-scrollbar{width:16px;}
+        ::-webkit-scrollbar-track{background-color: #000;}
+        ::-webkit-scrollbar-thumb{background-color: #000;border-radius: 10px;}
+        ::-webkit-scrollbar-thumb:hover{background-color: rgb(38, 34, 34);}
+        .main_text{opacity: 0;}
+        .main_text2{opacity: 0;}
+        .main_text3{opacity: 0;}
+
+    </style>
+</head>
+<body>
+    <script>
+        setTimeout(() => {
+            $(".main_text").animate({opacity:1},1000);
+        }, 100); 
+        setTimeout(() => {
+            $(".main_text2").animate({opacity:1},1000);
+        }, 300);
+        setTimeout(() => {
+            $(".main_text3").animate({opacity:1},1000);
+        }, 500);
+        $(function(){
+            $('html,body').mousewheel(function(e, d){
+                this.scrollLeft -= (d * 100);
+                e.preventDefault();
+                var scL = (parseInt(this.scrollLeft)-(d * 100));
+                var tot = (scL / 3876) * 100;
+                $("#scrBar").stop().animate({width:tot+"%"},100);
+               
+                
+            });
+        });
+    </script>
+<div class="wrap1 clearfix" id="slider">
+    <div class="page page1 wrap">
+        <header class="wrap header">
+            <nav>
+        <div id="menu_btn">
+            <span></span>
+            <span></span>
+        </div>
+                <h1 class="logo"><a href="#"><img src="../images/logo.png" alt="LOGO"/></a></h1>
+                <ul class="menu clear" id="gnb">
+                    <li><a href="#">Driving Center</a>
+                        <ul class="submenu">
+                            <li class="submenu"><a href="#">한눈에 보기</a></li>
+                            <li><a href="#">드라이빙 센터 소개</a></li>
+                            <li><a href="#">서비스 센터 이용안내</a></li>
+                            <li><a href="#">찾아오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Driving Experience</a></li>
+                        <ul class="submenu">
+                            <li><a href="#">한눈에 보기</a></li>
+                            <li><a href="#">일정/요금 안내</a></li>
+                            <li><a href="#">프로그램 예약 길라잡이</a></li>
+                            <li><a href="#">드라이빙 트랙 안내</a></li>
+                            <li><a href="#">체험 차량 안내</a></li>
+                            <li><a href="#">패키지 상품</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Junior Campus</a>
+                        <ul class="submenu">
+                            <li><a href="#">한눈에 보기</a></li>
+                            <li><a href="#">주니어 캠퍼스 포털</a></li>
+                            <li><a href="#">주니어 캠퍼스 실험실</a></li>
+                            <li><a href="#">주니어 캠퍼스 워크숍</a></li>
+                            <li><a href="#">키즈 드라이빙 스쿨</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">News & Event</a>
+                        <ul class="submenu">
+                            <li><a href="#">한눈에 보기</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">센터소식</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">고객센터</a>
+                        <ul class="submenu">
+                            <li><a href="#">한눈에 보기</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">센터소식</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="util">
+                <a href="#">로그인</a>
+            </div>
+            <div class="util2">
+                <a href="#">예약하기</a>
+            </div>
+        </header>
+        <div class="video">
+                <h2 class="main_text">WELLCOME DRIVING CENTER</h2>
+                <h3 class="main_text2">드라이빙센터에 오신 것을 환영합니다</h3>
+                <h4 class="main_text3">드라이빙, 그 이상의 즐거움이 펼쳐집니다.</h4>
+                <h5><a href=>예약하기</a></h5>
+        </div>
+	</div>
+    <div class="page page2">
+        <img src="../images/다운로드.jpg" alt=""/>
+		<div class="square">
+			<h2 class="pg_text">Driving Experience</h2>
+			<h3>최고의 트랙에서</h3>
+			<h4>최상의 다이나믹이 펼쳐집니다.</h4>
+		</div>
+    </div>
+    <div class="page page3">
+		<img src="../images/1627539054693.jpg" alt=""/>
+		<div class="text_box">
+			<h2>Driving center 쇼룸</h2>
+			<h3>Driving center의</h3>
+			<h4>어제와 오늘을 경험하세요.</h4>
+		</div>
+    </div>
+    <div class="page page4">
+		<div class="img_1">
+			<img src="../images/1627539147441.jpg" alt=""/>
+		</div>
+		<div class="img_2">
+			<img src="../images/img_list3.jpg" alt=""/>
+		</div>
+    </div>
+</div>
+<div class="scrollPosition"><p id="scrBar"></p></div>
+<script src="./vegas.min.js"></script>
+        <script>	  
+            $(function(){
+                $(".page1").vegas({
+                    slides:[{
+                        video:{
+                            src:["./video.mp4"],
+                            loop:true,
+                            bute:true
+                        }
+                    }]
+                });
+            });
+        </script>
+        <script src="./index.js"></script>
+        </body>
+</html>
