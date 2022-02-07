@@ -1,9 +1,7 @@
 @charset "utf-8";
-@media all and (min-width:1920px){
+@media all and (min-width:1024px){
 	*{margin:0; padding:0; list-style: none;}
 a,a:link,a:visited,a:hover,a:active{text-decoration:none;}
-@import "pc.css";
-@import "mobile.css";
 body{background-color: black;}
 body * { box-sizing:border-bow; }
 .clearfix:after{content:''; display: block; clear:both; position: absolute;}

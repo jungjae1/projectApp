@@ -132,17 +132,31 @@
         setTimeout(() => {
             $(".main_text3").animate({opacity:1},1000);
         }, 500);
+
+
+        
         $(function(){
-            $('html,body').mousewheel(function(e, d){
-                this.scrollLeft -= (d * 100);
-                e.preventDefault();
-                var scL = (parseInt(this.scrollLeft)-(d * 100));
-                var tot = (scL / 3876) * 100;
-                $("#scrBar").stop().animate({width:tot+"%"},100);
-               
+                    $('html,body').mousewheel(function(e, d){ //가로스크롤이벤트
+                        this.scrollLeft -= (d * 100);
+                        e.preventDefault();
+                        var scL = (parseInt(this.scrollLeft)-(d * 100));
+                        var tot = (scL / 3876) * 100;
+                        $("#scrBar").stop().animate({width:tot+"%"},100);
+                    });
+                });
+    
+    /*
+    $(window).resize(function(){
+            var wi = $(window).width();
+            if(wi>1024){
+            }else if(wi <= 1024){
                 
-            });
-        });
+            }
+		
+	});
+    */
+
+
     </script>
 <div class="wrap1 clearfix" id="slider">
     <div class="page page1 wrap">
