@@ -17,7 +17,7 @@ html, body{height:100%;}
 }
 .submenu{color:#fff;}
 .wrap{width:1920px; margin:0 auto;}
-.submenu>li>a{background:#f83;}
+.submenu>li>a{background:rgba(72, 157, 79, 0.7)}
 .menu>li>a, .submenu>li>a{
     display:block !important;
     position:relative;
@@ -28,7 +28,9 @@ html, body{height:100%;}
     line-height:80px;
     color:#fff;
 }
-.submenu>li{display:none;}
+.submenu{display:none;} 
+/*.submenu>li{display:none;} */
+
 .menu>li>a:hover, .submenu>li>a:hover{
     display: block;
     background:teal;
