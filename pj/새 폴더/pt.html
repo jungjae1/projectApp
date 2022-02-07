@@ -5,7 +5,7 @@
     <meta name="description" content=""/>
     <meta name="keywords" content="" />
     <meta name="author" content=""/>
-    <title></title>
+    <title>Driving center</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="./js/bootstrap.js"></script>
@@ -24,7 +24,7 @@
 		}
 		#scrBar{width:0px; height:5px; background:red; transition:all .4s;}
 	</style>
-    <script type="text/javascript">
+    <script>
 
         window.onload = function () {
 
@@ -32,7 +32,6 @@
 
             $(elm).each(function (index) {
 
-                // 개별적으로 Wheel 이벤트 적용
 
                 $(this).on("mousewheel DOMMouseScroll", function (e) {
 
@@ -157,13 +156,13 @@
                 <ul class="menu clear" id="gnb">
                     <li><a href="#">Driving Center</a>
                         <ul class="submenu">
-                            <li class="submenu"><a href="#">한눈에 보기</a></li>
+                            <li><a href="#">한눈에 보기</a></li>
                             <li><a href="#">드라이빙 센터 소개</a></li>
                             <li><a href="#">서비스 센터 이용안내</a></li>
                             <li><a href="#">찾아오시는 길</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Driving Experience</a></li>
+                    <li><a href="#">Driving Experience</a>
                         <ul class="submenu">
                             <li><a href="#">한눈에 보기</a></li>
                             <li><a href="#">일정/요금 안내</a></li>
@@ -192,10 +191,10 @@
                     </li>
                     <li><a href="#">고객센터</a>
                         <ul class="submenu">
-                            <li><a href="#">한눈에 보기</a></li>
-                            <li><a href="#">공지사항</a></li>
-                            <li><a href="#">이벤트</a></li>
-                            <li><a href="#">센터소식</a></li>
+                            <li><a href="#">1:1 상담</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">위치안내</a></li>
+                            <li><a href="#">마이페이지</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -211,7 +210,7 @@
                 <h2 class="main_text">WELLCOME DRIVING CENTER</h2>
                 <h3 class="main_text2">드라이빙센터에 오신 것을 환영합니다</h3>
                 <h4 class="main_text3">드라이빙, 그 이상의 즐거움이 펼쳐집니다.</h4>
-                <h5><a href=>예약하기</a></h5>
+                <h5><a href="#">예약하기</a></h5>
         </div>
 	</div>
     <div class="page page2">
@@ -255,5 +254,12 @@
             });
         </script>
         <script src="./index.js"></script>
-        </body>
+<script>
+$(".menu>li").hover(function(){
+	$(this).children(".submenu").stop().fadeIn();
+},function(){
+	$(this).children(".submenu").stop().fadeOut();
+});
+</script>
+</body>
 </html>
