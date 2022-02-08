@@ -9,6 +9,8 @@ body * { box-sizing:border-bow; }
 .page img{width:100%;}
 .wrap1{width:400%; height:100%; overflow-y: hidden; z-index: -99999;}
 html, body{height:100%;}
+#none{display: none;}
+.m_text, .m_text2, .m_text3{display: none;}
 .page2{width:1920px;}
 .logo{
     top:20px;

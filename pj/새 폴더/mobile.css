@@ -2,10 +2,15 @@
 @import "reset.css";
 @media all and (max-width:1024px){
 *{margin:0; padding:0; list-style: none;}
+.wrap1{width:100%; overflow-x: hidden;}
 a,a:link,a:visited,a:hover,a:active{text-decoration:none;}
+::-webkit-scrollbar{width:14px;}
+::-webkit-scrollbar-track{background-color: #f6f6f6;}
+::-webkit-scrollbar-thumb{background-color: grey;}
 body{background-color: black;}
 .util{display: none;}
 .util2{display: none;}
+.main_text, .main_text2, .main_text3{display: none;}
 .wrap{
     width:100%; 
     margin: 0 auto;
@@ -88,5 +93,59 @@ body{background-color: black;}
     padding:10px 0px 10px 50px;
 }
 .submenu>li>a::before{content:'- ';}
-.video{width:100%; height:484px;}
+.video{width:100%; height:800px;}
+.video>h2, .video>h3, .video>h4{
+    text-align: center;
+    color:#fff;
+}
+.page1{width:100%;}
+.video>h2{
+    font-size: 45px;
+    word-break: break-all;
+    margin-top:30%;
+    height:100px;
+}
+.video>h5{
+    font-size:30px;
+    border:1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.8);
+    width:300px;
+    height:70px;
+    border-radius: 35px;
+    margin:0 auto;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 20%;
+}
+.video>h5>a{
+    color:black;
+}
+.main_text{width:280px;}
+/*page2*/
+.page2>img{width:100%;}
+.square{color:#fff;}
+.square>h2{
+    font-size: 40px;
+    text-align: left;
+}
+.square{height:400px;}
+#none>a{
+    color:#fff;
+    border-bottom: 2px solid #fff;
+    float:right;
+}
+.square>h3{
+    font-size:20px;
+    position: absolute;
+}
+.square>h4{
+    font-size:20px;
+    position: absolute;
+    margin-left:16%;
+}
+
+
+.page3>img{width:100%;}
+.page4{width:100%;}
+.img_1{display: none;}
 }
