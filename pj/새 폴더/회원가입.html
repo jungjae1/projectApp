@@ -12,67 +12,67 @@
     <link href="./join.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <header class="wrap header">
-        <nav>
-    <div id="menu_btn">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-            <h1 class="logo"><a href="#"><img src="../images/logo2.png" alt="LOGO"/></a></h1>
-            <ul class="menu">
-                <li><a href="#">Driving Center</a>
-                    <ul class="submenu">
-                        <li><a href="#">한눈에 보기</a></li>
-                        <li><a href="#">드라이빙 센터 소개</a></li>
-                        <li><a href="#">서비스 센터 이용안내</a></li>
-                        <li><a href="#">찾아오시는 길</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Driving Experience</a>
-                    <ul class="submenu">
-                        <li><a href="#">한눈에 보기</a></li>
-                        <li><a href="#">일정/요금 안내</a></li>
-                        <li><a href="#">프로그램 예약 길라잡이</a></li>
-                        <li><a href="#">드라이빙 트랙 안내</a></li>
-                        <li><a href="#">체험 차량 안내</a></li>
-                        <li><a href="#">패키지 상품</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Junior Campus</a>
-                    <ul class="submenu">
-                        <li><a href="#">한눈에 보기</a></li>
-                        <li><a href="#">주니어 캠퍼스 포털</a></li>
-                        <li><a href="#">주니어 캠퍼스 실험실</a></li>
-                        <li><a href="#">주니어 캠퍼스 워크숍</a></li>
-                        <li><a href="#">키즈 드라이빙 스쿨</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">News & Event</a>
-                    <ul class="submenu">
-                        <li><a href="#">한눈에 보기</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">이벤트</a></li>
-                        <li><a href="#">센터소식</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">고객센터</a>
-                    <ul class="submenu">
-                        <li><a href="#">1:1 상담</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">위치안내</a></li>
-                        <li><a href="#">마이페이지</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <div class="util">
-            <a href="#">로그인</a>
+        <header class="wrap header">
+            <nav>
+        <div id="menu_btn">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <div class="util2">
-            <a href="#">예약하기</a>
-        </div>
-    </header>
+                <h1 class="logo"><a href="#"><img src="../images/logo2.png" alt="LOGO"/></a></h1>
+                <ul class="menu">
+                    <li><a href="#">Driving Center</a>
+                        <ul class="submenu">
+                            <li><a href="#">한눈에 보기</a></li>
+                            <li><a href="#">드라이빙 센터 소개</a></li>
+                            <li><a href="#">서비스 센터 이용안내</a></li>
+                            <li><a href="#">찾아오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Driving Experience</a>
+                        <ul class="submenu">
+                            <li><a href="#">한눈에 보기</a></li>
+                            <li><a href="#">일정/요금 안내</a></li>
+                            <li><a href="#">프로그램 예약 길라잡이</a></li>
+                            <li><a href="#">드라이빙 트랙 안내</a></li>
+                            <li><a href="#">체험 차량 안내</a></li>
+                            <li><a href="#">패키지 상품</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Junior Campus</a>
+                        <ul class="submenu">
+                            <li><a href="#">한눈에 보기</a></li>
+                            <li><a href="#">주니어 캠퍼스 포털</a></li>
+                            <li><a href="#">주니어 캠퍼스 실험실</a></li>
+                            <li><a href="#">주니어 캠퍼스 워크숍</a></li>
+                            <li><a href="#">키즈 드라이빙 스쿨</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">News & Event</a>
+                        <ul class="submenu">
+                            <li><a href="#">한눈에 보기</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">센터소식</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">고객센터</a>
+                        <ul class="submenu">
+                            <li><a href="#">1:1 상담</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">위치안내</a></li>
+                            <li><a href="#">마이페이지</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="util">
+                <a href="#">로그인</a>
+            </div>
+            <div class="util2">
+                <a href="#">예약하기</a>
+            </div>
+        </header>
 <div class="main">
     <div class="main2">
         <h2>회원가입</h2>
@@ -198,5 +198,12 @@
         <span id="fot">All Rights Reserved.</span>
     </adress>
 </footer>
+<script>
+    $(".menu>li").hover(function(){
+        $(this).children(".submenu").stop().fadeIn();
+    },function(){
+        $(this).children(".submenu").stop().fadeOut();
+    });
+    </script>
 </body>
 </html>
