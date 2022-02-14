@@ -1,0 +1,134 @@
+@charset "utf-8";
+*{margin:0; padding:0; list-style: none;}
+a,a:link,a:visited,a:hover,a:active{text-decoration:none;}
+.logo{
+    top:20px;
+    position:relative;
+    right:20%;
+    color:black;
+}
+.wrap{width:1920px; margin:0 auto;}
+.submenu>li>a{background:rgba(72, 157, 79, 0.7)}
+.menu>li>a, .submenu>li>a{
+    display:block !important;
+    position:relative;
+    text-align:center;
+    width:200px; 
+    height:80px;
+    top:10px;
+    line-height:80px;
+}
+.submenu{display:none;} 
+/*.submenu>li{display:none;} */
+
+.menu>li>a:hover, .submenu>li>a:hover{
+    display: block;
+    background:teal;
+    font-weight:bold;
+}
+.clear::after{
+	content:'';
+	display:block;
+	visibility:hidden;
+	width:0; height:0;
+	clear:both;
+}
+.header>nav, .menu{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.menu{ display:flex !important;}
+.submenu{
+    position:absolute;
+    width:100%;
+}
+.util{
+    position: absolute;
+    right:7%;
+    top:38.5px;
+}
+.util2{
+    position: absolute;
+    right:2%;
+    top:38.5px;
+}
+.main_text{
+    margin-top: 40px;
+    border-bottom:3px solid #814B9D;
+    width:600px;
+    height:150px;
+    margin: 0 auto;
+}
+.main_text>h2{
+    font-size: 40px;
+    padding-top: 40px;
+}
+.main_text>h3{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.contents{
+    width:600px;
+    margin:50px auto;
+}
+ul.tab_menu{
+    width:600px;
+}
+
+ul.tab_menu>li{
+    float:left;
+    width:200px;
+    background: rgba(129,75,157,0.7);
+    text-align:center;
+    height:30px;
+    line-height:30px;
+    box-sizing: border-box;
+    cursor: pointer;
+    color:#fff;
+}
+ul.tab_menu>li>a{color:#fff;}
+ul.tab_menu::after{
+    content:'';
+	display:block;
+	clear:both;
+	width:0; height:0;
+	visibility:hidden;
+}
+
+ul.tab_menu>li.active{
+    background: white;
+    border-top:1px solid lightskyblue;
+    border-bottom:1px solid lightskyblue;
+    font-weight: bold;
+    width:300px; height:50px;
+    padding-top: 10px;
+    
+}
+ul.tab_menu>li.active1{
+    width:300px; height:50px;
+    padding-top: 10px;
+}
+ul.tab_menu>li.active>a{color:black;}
+ul.tab_menu>li:first-child.active{
+    border-left:1px solid lightskyblue;
+}
+ul.tab_menu>li:last-child.active{
+    border-right:1px solid lightskyblue;
+}
+.phon{
+    width:600px;
+    margin:0 auto;
+}
+#id{
+    width:600px; height:35px;
+    margin-top:10px;
+    margin-bottom:10px;
+
+}
+.pass{
+    width:600px;
+    margin:0 auto;
+}
+
