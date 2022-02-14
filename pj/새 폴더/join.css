@@ -85,9 +85,69 @@ a,a:link,a:visited,a:hover,a:active{text-decoration:none;}
     position: relative;
     height:51px;
 }
-input{width:460px; height:35px;}
+.bir_dd, .bir_mm, .bir_yy {
+    display: table-cell;
+    table-layout: fixed;
+    vertical-align: middle;
+}
+#bir_box{width:140px; height:35px;}
+#bir_box1{width:144px; height:39px;}
+.bir_wrap{
+    display: table;
+    width: 100%;
+	padding-top:10px;
+}
+.bir_mm{padding-left:15px; padding-right:15px;}
+#top{width:460px; height:35px;}
+.phon>h2{
+    padding-top: 10px;
+    font-size: 14px;
+    text-align: left;}
+#top1{
+    width:464px; 
+    height:39px;
+}
+#top2{
+    width:300px; 
+    height:39px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float:left;
+}
+.cellect{padding-bottom: 10px;}
+.ph_tag{width:464px;}
+.ph_tag>a>span{
+    font-size: 14px;
+    padding-left: 30px;
+}
+.button{
+    position: absolute;
+    color:#fff;
+    font-size:14px;
+    border: 1px solid rgba(0,0,0,0.8);
+    background-color: #814B9D;
+    opacity: 0.8;
+    width:130px;
+    height:30px;
+    padding-top:10px;
+    margin-top: 10px;
+    margin-left:-50px;
+    }
+.last_phon{margin-bottom: 8%;}
+.join_btn{
+    border:1px solid rgba(0,0,0,0.8);
+    height:35px;
+    width: 464px;
+    margin: 0 auto;
+    background-color: #814B9D;
+    opacity: 0.8;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+.join_btn>a{color:#fff;}
 /*footer*/
 .last{
     font-size:10px;
     text-align: center;
 }
+#fot{color:black;}

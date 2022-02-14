@@ -80,119 +80,122 @@
     <div id="id">
         <h2 class="id_title">아이디</h2>
         <span class="box">
-            <input type="text"></span>
+            <input type="text" id="top"></span>
         </span>
     </div>
     <div id="id">
         <h2 class="id_title1">비밀번호</h2>
         <span>
-            <input type="text"></span>
+            <input type="text" id="top"></span>
         </span>
     </div>
     <div id="id">
         <h2 class="id_title">비밀번호 재확인</h2>
         <span>
-            <input type="text"></span>
+            <input type="text" id="top"></span>
         </span>
     </div>
     <div id="id">
         <h2 class="id_title">이름</h2>
         <span>
-            <input type="text"></span>
+            <input type="text" id="top"></span>
         </span>
     </div>
-    <div>
-        <h2 class="id_title">생년월일</h2>
-        <div>
-            <span>
-                <input type="text"  placeholder="년(4자)" maxlength="4">
-            </span>
-        </div>
-        <div>
-            <span class="ps_box">
-                <select aria-label="월">
-                    <option value="">월</option>
-                                       <option value="01">
-                                        1
-                                    </option>
-                                       <option value="02">
-                                        2
-                                    </option>
-                                       <option value="03">
-                                        3
-                                    </option>
-                                       <option value="04">
-                                        4
-                                    </option>
-                                       <option value="05">
-                                        5
-                                    </option>
-                                       <option value="06">
-                                        6
-                                    </option>
-                                       <option value="07">
-                                        7
-                                    </option>
-                                       <option value="08">
-                                        8
-                                    </option>
-                                       <option value="09">
-                                        9
-                                    </option>
-                                       <option value="10">
-                                        10
-                                    </option>
-                                       <option value="11">
-                                        11
-                                    </option>
-                                       <option value="12">
-                                        12
-                                    </option>
-                </select>
-            </span>
-        </div>
-        <div>
-            <span>
-                <input type="text"placeholder="일" aria-label="일">
-            </span>
-        </div>
+    <div class="join_bir" id="id">
+        <h2>생년월일</h2>
+			<div class="bir_wrap">
+				<div class="bir_yy">
+					<span class="ps_box">
+						<input type="text" id="bir_box"  placeholder="년(4자)" maxlength="4">
+					</span>
+				</div>
+				<div class="bir_mm">
+					<span class="ps_box">
+						<select aria-label="월" id="bir_box1">
+							<option value="">월</option>
+											   <option value="01">
+												1
+											</option>
+											   <option value="02">
+												2
+											</option>
+											   <option value="03">
+												3
+											</option>
+											   <option value="04">
+												4
+											</option>
+											   <option value="05">
+												5
+											</option>
+											   <option value="06">
+												6
+											</option>
+											   <option value="07">
+												7
+											</option>
+											   <option value="08">
+												8
+											</option>
+											   <option value="09">
+												9
+											</option>
+											   <option value="10">
+												10
+											</option>
+											   <option value="11">
+												11
+											</option>
+											   <option value="12">
+												12
+											</option>
+						</select>
+					</span>
+				</div>
+				<div class="bir_dd">
+					<span class="ps_box">
+						<input type="text"placeholder="일" id="bir_box" aria-label="일">
+					</span>
+				</div>
+			</div>
     </div>
-    <div>
-        <h3 class="id_title">휴대전화</h3>
-        <div>
-            <select aria-label="전화번호 입력">
+    <div class="phon" id="id">
+        <h2 class="id_title">휴대전화</h2>
+        <div class="cellect">
+            <select aria-label="전화번호 입력"  id="top1">
                 <option value="82">
                     대한민국 +82
                 </option>
-        <div>
+		</div>
+        <div class="ph_tag">
             <span>
-                <input type="tel" placeholder="전화번호 입력">
+                <input type="tel" placeholder="전화번호 입력"  id="top2">
             </span>
-            <a href="#">
-                <span>인증번호받기</span>
+            <a href="#" class="button">
+                <span class="button1">인증번호받기</span>
             </a>
+		</div>
+		<div class="last_phon">
             <span>
-                <input type="tel" placeholder="인증번호를 입력하세요">
+                <input type="tel" id="top" placeholder="인증번호를 입력하세요">
             </span>
-        </div>
         </div>
     </div>
-    <div>
+    <div class="join_btn">
         <a href="#">
             <span>가입하기</span>
         </a>
     </div>
-</div>
 <footer class="last">
     <ul>
         <li>
-            <a href="#">이용약관  |  개인정보처리방침  |  책임희 한계와 법적고지  |  회원정보 고객센터</a>
+            <a href="#" id="fot">이용약관  |</a><a href="#" id="fot">  개인정보처리방침  |</a><a href="#" id="fot">  책임희 한계와 법적고지  |</a><a href="#" id="fot">  회원정보 고객센터</a>
         </li>  
     </ul>
     <adress>
         <em>Copyright</em>
-        <em><a href="#">Driving Center Corp.</em>
-        <span class="all_r">All Rights Reserved.</span>
+        <em><a href="#" id="fot">Driving Center Corp.</em>
+        <span id="fot">All Rights Reserved.</span>
     </adress>
 </footer>
 </body>
