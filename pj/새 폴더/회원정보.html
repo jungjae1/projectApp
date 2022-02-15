@@ -95,21 +95,21 @@
         <h3>비밀번호 확인</h3>
         <input type="password" id="id" placeholder="비밀번호 입력">
     </div>
-    <div>
-        <a href="#"><img src="../images/kakao.png" alt=""/>카카오 연결하기</a>
-        <a href="#"><img src="../images/naver.png" alt=""/>네이버 연결하기</a>
+    <div class="sns">
+        <a href="#" id="kakao"><img src="../images/kakao.png" id="img" alt=""/>카카오 연결하기</a>
+        <a href="#" id="naver"><img src="../images/naver.png" alt=""/>네이버 연결하기</a>
     </div>
-    <div>
+    <div class="adress">
         <h3>주소</h3>
-        <div>
-            <input type="text">
-            <a href="#">주소찾기</a>
+        <div class="adr_wrap">
+            <input type="text" id="id1">
+            <a href="#" id="adr_btn">주소찾기</a></p>
         </div>
         <div>
-            <input type="text">
+            <input type="text" id="id">
         </div>
         <div>
-            <input type="text">
+            <input type="text" id="id" placeholder="상세주소">
         </div>
     </div>
     <footer class="last">
@@ -124,6 +124,27 @@
             <span id="fot">All Rights Reserved.</span>
         </adress>
     </footer>
+    <script>
+        //스크립트작성
+        $(function(){
+            $("ul.tab_menu>li").click(function(){
+                //$("ul.tab_menu>li").removeClass("active");
+                $(this).siblings("li").removeClass("active");
+                $(this).addClass("active");
+                var idx = $(this).index();
+                if(idx == 0){
+                    $(".tab_contents>div").removeClass("active");
+                    $("#first").addClass("active");
+                } else if(idx == 1){
+                    $(".tab_contents>div").removeClass("active");
+                    $("#second").addClass("active");
+                }else{
+                    $(".tab_contents>div").removeClass("active");
+                    $("#third").addClass("active");
+                }
+            });
+        });
+        </script>
     <script>
         $(".menu>li").hover(function(){
             $(this).children(".submenu").stop().fadeIn();

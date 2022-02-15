@@ -7,7 +7,7 @@ a,a:link,a:visited,a:hover,a:active{text-decoration:none;}
     right:20%;
     color:black;
 }
-.wrap{width:1920px; margin:0 auto;}
+.wrap{width:100%; margin:0 auto;}
 .submenu>li>a{background:rgba(72, 157, 79, 0.7)}
 .menu>li>a, .submenu>li>a{
     display:block !important;
@@ -79,11 +79,11 @@ ul.tab_menu{
 
 ul.tab_menu>li{
     float:left;
-    width:200px;
+    width:300px;
     background: rgba(129,75,157,0.7);
     text-align:center;
-    height:30px;
-    line-height:30px;
+    height:50px;
+    margin-top: 10px;
     box-sizing: border-box;
     cursor: pointer;
     color:#fff;
@@ -104,7 +104,6 @@ ul.tab_menu>li.active{
     font-weight: bold;
     width:300px; height:50px;
     padding-top: 10px;
-    
 }
 ul.tab_menu>li.active1{
     width:300px; height:50px;
@@ -117,6 +116,26 @@ ul.tab_menu>li:first-child.active{
 ul.tab_menu>li:last-child.active{
     border-right:1px solid lightskyblue;
 }
+.tab_contents{
+    position: relative;
+}
+.tab_contents>div{
+    position:absolute;
+    background:#fff;
+    border-bottom:1px solid lightskyblue;
+    border-left:1px solid lightskyblue;
+    border-right:1px solid lightskyblue;
+    box-sizing: border-box;
+    padding:20px;
+    font-size:0.8em;
+    color:darkcyan;
+    height:150px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    line-height: 2;
+}
+.tab_contents>div>h2{background: lightcyan; text-align: center;}
+.tab_contents>div.active{z-index:9999;}
 .phon{
     width:600px;
     margin:0 auto;
@@ -131,4 +150,67 @@ ul.tab_menu>li:last-child.active{
     width:600px;
     margin:0 auto;
 }
+.sns{
+    width:603.99px;
+    margin:50px auto;
+}
+#kakao{
+    color:black;
+    border:1px solid #ffeb34;
+    background-color: #ffeb34;
+    color:black;
+    width:293px;
+    height:50px;
+    line-height: 50px;
+    display: inline-block;
+    text-align: center;
+}
+.sns>a>img{padding-right: 10px;}
 
+#naver{
+    color:#fff;
+    border:1px solid #32cb4f;
+    background-color: #32cb4f;
+    width:293px;
+    height:50px;
+    line-height: 50px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 7px;
+}
+
+.adr_wrap{
+    width:600px; height:35px;
+    padding-bottom: 20px;
+}
+.adress{
+    width:600px;
+    margin: auto;
+}
+#id1{
+    width:400px; height:35px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+#adr_btn{
+    border:0px solid;
+    background-color: rgba(129,75,157,0.7);
+}
+#adr_btn{
+    position: absolute;
+    width:150px;
+    margin-top:10px;
+    margin-left: 50px;
+    display: inline-block;
+    height:38.99px;
+    line-height:38.99px;
+    text-align: center;
+    margin-bottom: 5px;
+    color:#fff;
+}
+#fot{color:black;}
+.last{
+    font-size:10px;
+    text-align: center;
+    padding-top: 50px;
+}
