@@ -17,6 +17,7 @@ a,a:link,a:visited,a:hover,a:active{text-decoration:none;}
     height:80px;
     top:10px;
     line-height:80px;
+    color:black;
 }
 .submenu{display:none;} 
 /*.submenu>li{display:none;} */
@@ -49,6 +50,8 @@ a,a:link,a:visited,a:hover,a:active{text-decoration:none;}
     right:7%;
     top:38.5px;
 }
+.util>a{color:black;}
+.util2>a{color:black;}
 .util2{
     position: absolute;
     right:2%;
